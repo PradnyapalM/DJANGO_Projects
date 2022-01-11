@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/demo.css' %}">
+</head>
+<body>
+    <h1>Nagpur Job Portal</h1>
+    <img src="{% static 'images/marsh.jpg' %}" alt="">
+    <img src="{% static 'images/pika.jpg' %}" alt="">
+    <img src="{% static 'images/restro.jpg' %}" alt="">
+
+    {% if jobs_list %}
+    <table>
+        <thead>
+            <th>Date</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Eligibility</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </thead>
+        {% for job in jobs_list %}
+        <tr>
+            <td>{{job.date}}</td>
+            <td>{{job.company}}</td>
+            <td>{{job.title}}</td>
+            <td>{{job.eligibility}}</td>
+            <td>{{job.address}}</td>
+            <td>{{job.email}}</td>
+            <td>{{job.phonenumber}}</td>
+            
+
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No Data Found</p>
+    {% endif %}
+    {% include 'testApp/pagination.html' with page=jobs_list%}
+</body>
+</html>

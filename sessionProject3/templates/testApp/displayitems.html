@@ -1,0 +1,23 @@
+{% extends "testApp/base.html" %} 
+
+{%  block bodyblock %}
+              <h1>Your shopping cart information</h1>
+              {% if request.session %}
+              <table>
+                  <thead>
+                      <th>Name of Item</th>
+                      <th>Quantity</th>
+                 </thead>
+                 {% for key,value in request.session.items %}
+                 <tr>
+                     <td>{{key}}</td>
+                     <td>{{value}}</td>
+                 </tr>
+                 {% endfor %}
+                </table>
+                 {% else %}
+                 <p>No item in shopping cart</p>
+                 {% endif %}
+              
+              
+        {% endblock %}

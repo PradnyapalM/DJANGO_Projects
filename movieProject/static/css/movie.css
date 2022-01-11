@@ -1,0 +1,30 @@
+body{
+    background: url(https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZnVsbCUyMGhkJTIwd2FsbHBhcGVyJTIwbGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .jumbotron{
+    margin-top: 200px;
+    background: orange;
+    text-align: center;
+    color: white;
+}
+
+ table , tr ,thead,td{
+    border: 2px solid red;
+    font-size: 500px white;
+    font-weight: 100;
+}
+
+tr{
+    font-size: large;
+    color: white;
+    
+}
+
+table{
+    text-align: center;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data here Filtered</h1>
+        {% load cust_filters %}
+    {% for data in data_list %}
+    <ul>
+        <li>{{data.name | title }}</li>
+        <li>{{data.subject | truncate5}}</li>
+        <li>{{data.dept | lower }}</li>
+        <li>{{data.date | date:"d-m-Y"}}</li>
+        
+
+    </ul>
+    {% endfor %}
+
+</body>
+</html>
