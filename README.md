@@ -1,5 +1,5 @@
 # DJANGO_Projects
-MORE THAN 33 PLUS PROJECTS I BUILD BY USING BELOW TOPICS !!!!!!
+I BUILD  MORE THAN 33 PLUS PROJECTS BY USING BELOW TOPICS !!!!!!
 All Above the Project folders are build by following topics
 
 
